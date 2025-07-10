@@ -368,7 +368,7 @@
       }
 
       try {
-        const res = await fetch('/api/resend-verification', {
+        const res = await fetch('http://backend.abquaoub.me/api/resend-verification', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
@@ -408,7 +408,7 @@
       setLoading(true);
 
       try {
-        const res = await fetch('/api/verify-email', {
+        const res = await fetch('http://backend.abquaoub.me/api/verify-email', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
